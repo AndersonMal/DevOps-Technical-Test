@@ -47,7 +47,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t duvangt/Anderson-Maldonado:v1.0 .
+        run: docker build -t duvangt/anderson-maldonado:v1.0 .
 
       - name: Push Docker image
-        run: docker push duvangt/Anderson-Maldonado:v1.0
+        run: docker push duvangt/anderson-maldonado:v1.0
