@@ -24,7 +24,7 @@ jobs:
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v3
         with:
-          name: app
+          name: app # Asegúrate de que este nombre sea consistente
           path: target/*.jar
 
   build-docker:
@@ -38,7 +38,7 @@ jobs:
       - name: Download JAR artifact
         uses: actions/download-artifact@v3
         with:
-          name: app
+          name: app # Debe coincidir con el nombre usado en el paso anterior
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
